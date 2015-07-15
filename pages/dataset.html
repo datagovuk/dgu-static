@@ -1,0 +1,14 @@
+<div class="jumbotron">
+    <h1>{{ dataset.title }}</h1>
+    <p>ID: {{ dataset.id }}</p>
+    <p>License: {{ dataset.license }}</p>
+
+    <ul>
+        <li data-ng-repeat="resource in dataset.resources">
+            <a href="{{ resource.url }}">{{ resource.description }}</a>
+        </li>
+    </ul>
+
+    <pre>{{ dataset | json }}</pre>
+
+</div>

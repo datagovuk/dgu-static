@@ -1,0 +1,13 @@
+<div class="jumbotron">
+    <h1>Datasets</h1>
+
+    <input ng-model="query"> <button ng-click="searchButton.doClick(item, $event)">Search</button>
+
+
+    <ul>
+        <li data-ng-repeat="dataset in datasets">
+            <a href="#/dataset/{{ dataset.name }}">{{ dataset.title }}</a>
+        </li>
+    </ul>
+
+</div>
